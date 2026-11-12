@@ -1,0 +1,224 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2026-11-12T14:54:41.544Z",
+  "__export_source": "BACKTRON-5000",
+  "resources": [
+    {
+      "_id": "wrk_RegistroDeConsumoDeEnergia_1794495281540",
+      "parentId": null,
+      "modified": 1794495281540,
+      "created": 1794495281540,
+      "name": "Projeto RegistroDeConsumoDeEnergia",
+      "description": "Coleção gerada automaticamente pelo BACKTRON-5000",
+      "scope": "collection",
+      "_type": "workspace"
+    },
+    {
+      "_id": "fld_usuario_1794495281542",
+      "parentId": "wrk_RegistroDeConsumoDeEnergia_1794495281540",
+      "modified": 1794495281542,
+      "created": 1794495281542,
+      "name": "USUARIO",
+      "description": "Requisições da tabela usuario",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1794495281542,
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_list_usuario_1794495281543",
+      "parentId": "fld_usuario_1794495281542",
+      "modified": 1794495281543,
+      "created": 1794495281543,
+      "url": "http://localhost:3000/usuario",
+      "name": "Listar usuario",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -100,
+      "_type": "request"
+    },
+    {
+      "_id": "req_getid_usuario_1794495281543",
+      "parentId": "fld_usuario_1794495281542",
+      "modified": 1794495281543,
+      "created": 1794495281543,
+      "url": "http://localhost:3000/usuario/1",
+      "name": "Buscar usuario por ID",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -90,
+      "_type": "request"
+    },
+    {
+      "_id": "req_post_usuario_1794495281543",
+      "parentId": "fld_usuario_1794495281542",
+      "modified": 1794495281543,
+      "created": 1794495281543,
+      "url": "http://localhost:3000/usuario",
+      "name": "Cadastrar usuario",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"nome\": \"valor_nome\",\n  \"email\": \"valor_email\",\n  \"senha\": \"valor_senha\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -80,
+      "_type": "request"
+    },
+    {
+      "_id": "req_put_usuario_1794495281543",
+      "parentId": "fld_usuario_1794495281542",
+      "modified": 1794495281543,
+      "created": 1794495281543,
+      "url": "http://localhost:3000/usuario/1",
+      "name": "Alterar usuario",
+      "method": "PUT",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"nome\": \"valor_nome\",\n  \"email\": \"valor_email\",\n  \"senha\": \"valor_senha\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -70,
+      "_type": "request"
+    },
+    {
+      "_id": "req_del_usuario_1794495281543",
+      "parentId": "fld_usuario_1794495281542",
+      "modified": 1794495281543,
+      "created": 1794495281543,
+      "url": "http://localhost:3000/usuario/1",
+      "name": "Excluir usuario",
+      "method": "DELETE",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -60,
+      "_type": "request"
+    },
+    {
+      "_id": "fld_consumo_1794495281544",
+      "parentId": "wrk_RegistroDeConsumoDeEnergia_1794495281540",
+      "modified": 1794495281544,
+      "created": 1794495281544,
+      "name": "CONSUMO",
+      "description": "Requisições da tabela consumo",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1794495281544,
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_list_consumo_1794495281544",
+      "parentId": "fld_consumo_1794495281544",
+      "modified": 1794495281544,
+      "created": 1794495281544,
+      "url": "http://localhost:3000/consumo",
+      "name": "Listar consumo",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -100,
+      "_type": "request"
+    },
+    {
+      "_id": "req_getid_consumo_1794495281544",
+      "parentId": "fld_consumo_1794495281544",
+      "modified": 1794495281544,
+      "created": 1794495281544,
+      "url": "http://localhost:3000/consumo/1",
+      "name": "Buscar consumo por ID",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -90,
+      "_type": "request"
+    },
+    {
+      "_id": "req_post_consumo_1794495281544",
+      "parentId": "fld_consumo_1794495281544",
+      "modified": 1794495281544,
+      "created": 1794495281544,
+      "url": "http://localhost:3000/consumo",
+      "name": "Cadastrar consumo",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"usuarioId\": \"valor_usuarioId\",\n  \"local\": \"valor_local\",\n  \"equipamento\": \"valor_equipamento\",\n  \"consumoKwh\": \"valor_consumoKwh\",\n  \"mesReferencia\": \"valor_mesReferencia\",\n  \"status\": \"valor_status\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -80,
+      "_type": "request"
+    },
+    {
+      "_id": "req_put_consumo_1794495281544",
+      "parentId": "fld_consumo_1794495281544",
+      "modified": 1794495281544,
+      "created": 1794495281544,
+      "url": "http://localhost:3000/consumo/1",
+      "name": "Alterar consumo",
+      "method": "PUT",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"usuarioId\": \"valor_usuarioId\",\n  \"local\": \"valor_local\",\n  \"equipamento\": \"valor_equipamento\",\n  \"consumoKwh\": \"valor_consumoKwh\",\n  \"mesReferencia\": \"valor_mesReferencia\",\n  \"status\": \"valor_status\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -70,
+      "_type": "request"
+    },
+    {
+      "_id": "req_del_consumo_1794495281544",
+      "parentId": "fld_consumo_1794495281544",
+      "modified": 1794495281544,
+      "created": 1794495281544,
+      "url": "http://localhost:3000/consumo/1",
+      "name": "Excluir consumo",
+      "method": "DELETE",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -60,
+      "_type": "request"
+    }
+  ]
+}
